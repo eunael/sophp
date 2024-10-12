@@ -11,6 +11,6 @@ $client = new Client(['base_uri' => 'https://www.alura.com.br/']);
 $searcher = new Searcher($client, new Crawler());
 $courses = $searcher->search('cursos-online-programacao/php');
 
-foreach($courses as $course) {
+foreach ($courses as $course) {
     displayCourse($course);
 }
