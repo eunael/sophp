@@ -25,5 +25,21 @@
         "phpunit/phpunit": "^11",
         "squizlabs/php_codesniffer": "*",
         "phan/phan": "^5.4"
+    },
+    "scripts": {
+        "test": "phpunit src/tests/CoursesSearcherTest.php",
+        "cs": "phpcs --standard=PSR12 src",
+        "phan": "phan --allow-polyfill-parser",
+        "check": [
+            "@test",
+            "@cs",
+            "@phan"
+        ]
+    },
+    "scripts-descriptions": {
+        "test": "Executa os testes",
+        "cs": "Verifica se o código segue o padrão PSR12",
+        "phan": "Verifica se o código segue o padrão PSR12",
+        "check": "Executa os comandos PHAN, PHPCS e PHPUNIT"
     }
 }
