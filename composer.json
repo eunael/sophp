@@ -44,5 +44,6 @@
         "cs": "Verifica se o código segue o padrão PSR12",
         "phan": "Verifica se o código segue o padrão PSR12",
         "check": "Executa os comandos PHAN, PHPCS e PHPUNIT"
-    }
+    },
+    "bin": ["/src/search-courses.php"]
 }
