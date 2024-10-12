@@ -1,0 +1,24 @@
+{
+    "name": "eunael/buscador-cursos-alura",
+    "description": "Projeto para buscar os cursos no site da Alura",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Alura\\CoursesSearcher\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Natanael A. de Morais",
+            "email": "natanaelallves@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.9",
+        "symfony/dom-crawler": "^7.1",
+        "symfony/css-selector": "^7.1"
+    }
+}
